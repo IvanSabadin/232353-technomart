@@ -95,12 +95,65 @@
       
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <!-- Будет вставлена форма фильтра -->
+          <form class="form-filters" method="get" action="https://echo,htmlacademy.ru">
+            <fieldset class="fieldset fieldset-price">
+              <legend>Цена:</legend>
+            </fieldset>
+
+            <fieldset class="fieldset fieldset-brands">
+              <legend>Производители:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input type="checkbox" name="bosch" class="visually-hidden" id="bosch">
+                  <label for="bosch">Bosch</label>
+                </li>
+
+                <li class="filter-option">
+                  <input type="checkbox" name="interskol" class="visually-hidden" id="interskol">
+                  <label for="interskol">Интерскол</label>
+                </li>
+
+                <li class="filter-option">
+                  <input type="checkbox" name="makita" class="visually-hidden" id="makita">
+                  <label for="makita">Makita</label>
+                </li>
+
+                <li class="filter-option">
+                  <input type="checkbox" name="dewalt" class="visually-hidden" id="dewalt">
+                  <label for="dewalt">Dewalt</label>
+                </li>
+
+                <li class="filter-option">
+                  <input type="checkbox" name="hitachi" class="visually-hidden" id="hitachi">
+                  <label for="hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="fieladset fieldset-powersupply">
+              <legend>Питание:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input type="radio" name="powersupply" class="visually-hidden" id="battery" checked>
+                  <label for="battery">Аккумуляторные</label>
+                </li>
+
+                <li class="filter-option">
+                    <input type="radio" name="powersupply" class="visually-hidden" id="circuit">
+                    <label for="circuit">Сетевые</label>
+                  </li>
+              </ul>
+            </fieldset>
+
+            <button type="submit">Показать</button>
+          </form>
         </section>
 
         <section class="sorting">
           <h2 class="visually-hidden">Сортировка товаров</h2>
-          <!-- Будет вставлена форма сортировки -->
+          <form class="form-sorting">
+            <!--  -->
+          </form>
         </section>
 
         <section class="catalog">
@@ -286,7 +339,7 @@
 
           <div class="developer">
             Разработана - 
-            <a href="htmlacademy.ru">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
           </div>
         </div>
     </footer>
