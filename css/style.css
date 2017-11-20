@@ -1,0 +1,98 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header-top{
+	padding: 0;
+	min-height: 42px;
+	background-color: #293449;
+	line-height: 42px;
+}
+
+.header-top .container{
+	display: flex;
+}
+
+.header-top a{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "Cuprum";
+	font-size: 17px;
+	*//*line-height: 17px;*/
+}
+
+.logo a:hover{
+	background-color: #ca2c37;
+}
+
+.logo a:active{
+	background-color: #ba2732;
+}
+
+.logo{
+	background-color: #ee3643;
+}
+
+.logo-header{
+	display: inline-block;
+	width: 220px;
+}
+
+.logo-header a{
+	display: block;
+	padding-left: 55px;
+	font-family: "Cuprum";
+	font-size: 24px;	
+	text-transform: uppercase;
+}
+
+.form-search{
+	width: 270px;
+}
+
+.bookmarks{
+	display: inline-block;	
+	width: 150px;
+}
+
+.bookmarks a{
+	display: block;
+	padding-left: 40px;
+}
+
+.basket{
+	display: inline-block;
+	width: 150px;
+}
+
+.basket a{
+	display: block;
+	padding-left: 40px;
+}
+
+
+.order{
+	display: inline-block;
+	width: 150px;
+	background-color: #63a63e;
+}
+
+.order a{
+	display: block;
+	padding-left: 20px;
+}
+
+.order a:hover{
+	background-color: #5fbb2d;
+}
+
+.order a:active{
+	background-color: #518534;
+}
