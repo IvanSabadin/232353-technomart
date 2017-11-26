@@ -19,6 +19,10 @@ header{
 	background-image: url("../img/bg-header.jpg");
 }
 
+.visuallly-hidden{
+	display: none;
+}
+
 .container{
 	width: 940px;
 	margin: 0 auto;
@@ -54,7 +58,18 @@ header{
 }
 
 .logo{
+	position: relative;
 	background-color: #ee3643;
+}
+
+.logo:after{
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	content: "";
+	height: 5px;
+	width: 220px;
+	background-color: #b52933;
 }
 
 .logo-header{
@@ -64,13 +79,15 @@ header{
 
 .logo-header a{
 	display: block;
-	padding-left: 55px;
+	/*padding-left: 55px;*/
 	font-family: "Cuprum";
 	font-size: 24px;	
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .form-search{
+	position: relative;
 	width: 270px;
 	/*padding-left: 50px;*/
 }
@@ -87,6 +104,14 @@ header{
 	color: #ffffff;
 	font-size: 17px;
 }
+
+/*.form-search input[type="text"]:before{
+	position: absolute;
+	top: 100px;
+	left: 120px;
+	content: "Q";
+	color: red;
+}*/
 
 .form-search input[type="text"]:hover{
 	background-color: #212a3a;
@@ -206,13 +231,27 @@ header{
 
 .header-middle{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-bottom: 43px;
 }
 
 .header-middle-block{
 	width: 300px;
-	min-height: 45px;
-	border: 1px solid red;
+	/*min-height: 45px;*/
+
+	/*border: 1px solid red;*/
+}
+
+.middle-content{
+	width: 196px;
+	padding-top: 6px;
+	padding-left: 53px;
+	padding-right: 51px;
+	font-family: "Cuprum";
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+	color: #ee3643;
 }
 
 .contact{
@@ -222,20 +261,98 @@ header{
 	color: #32425c;
 }
 
-.contact span{
+.contact p{
+	padding: 0;
+	margin: 0;
 	margin-left: 10px;
 }
 
+
 .header-phone{
-	width: 150px;	
+	position: relative;
+	width: 152px;	
 	margin-bottom: 8px;
 	padding-left: 70px;
-	padding-right: 50px;
+	padding-right: 42px;
 	border: 3px solid #ffffff;
-	/*font-family: "Cuprum";*/
+	font-family: "Cuprum";
 	font-size: 21px;
 	line-height: 39px;
-	color: #ee3643;	
+	color: #ee3643;
+	font-weight: bold;
+}
+
+.header-phone:before{
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	width: 19px;
+	height: 19px;
+	content: "";
+	background-image: url("../img/icon-phone.svg");
+	background-repeat: no-repeat;
+}
+
+.user-block{
+	display: flex;
+	justify-content: flex-end;
+	height: 45px;
+}
+
+.user-block a{
+	display: block;
+	margin-left: 10px;
+	min-height: 45px;
+	font-family: "Cuprum";
+	font-size: 21px;
+	line-height: 45px;
+	color: #000000;
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+.user-block-login{
+	position: relative;
+	padding-left: 48px;
+	padding-right: 27px;
+}
+
+.user-block-login:before{
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	width: 20px;
+	height: 17px;
+	content: "";
+	background-image: url("../img/icon-login.svg");
+	background-repeat: no-repeat;
+}
+
+.user-block-login:hover{
+	color: #ee3643;
+}
+
+.user-block-login:hover:before{
+	background-image: url("../img/icon-login-act.svg");
+}
+
+.user-block-login:active{
+	color: #000000;
+	opacity: 0.3;
+}
+
+.user-block-registration{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.user-block-registration:hover{
+	color: #ee3643;
+}
+
+.user-block-registration:active{
+	color: #000000;
+	opacity: 0.3;
 }
 
 .main-menu{
@@ -666,6 +783,7 @@ header{
 .information{
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 86px;
 }
 
 .information h2{
@@ -680,7 +798,17 @@ header{
 	line-height: 24px;
 }
 
+.information-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+
 .information-block a{
+	display: block;
+	margin-top: auto;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -693,6 +821,10 @@ header{
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
+
+.information-map{
+	margin-bottom: 40px;
 }
 
 .btn-about{
@@ -709,6 +841,7 @@ header{
 
 footer{
 	background-color: #32425c;
+	margin-top: 
 }
 .logo-footer{
 	display: inline-block;
@@ -717,10 +850,14 @@ footer{
 
 .logo-footer a{
 	display: block;
-	padding-left: 55px;
+	/*padding-left: 55px;*/
 	font-family: "Cuprum";
-	font-size: 24px;	
+	font-size: 30px;
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 63px;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .footer-top{
@@ -741,7 +878,7 @@ footer{
 .menu-footer-list a{
 	margin-left: 58px;
 	font-family: "Cuprum";
-	font-size: 18;
+	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
 	color: #ffffff;
@@ -761,7 +898,7 @@ footer{
 	justify-content: space-between;
 	margin-bottom: 53px;
 	font-family: "Cuprum";
-	font-size: 18;
+	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
 }
@@ -775,7 +912,7 @@ footer{
 
 .menu-catalog-list a{
 	font-family: "Cuprum";
-	font-size: 18;
+	font-size: 18px;
 	line-height: 24px;
 	color: #ffda96;
 	text-decoration: none;
@@ -792,9 +929,93 @@ footer{
 }
 
 .footer-bottom{
+	padding-bottom: 34px;
 	background-color: #293449;
 }
 
 .footer-wrapper{
 	display: flex;
+	padding-top: 37px;
+	font-family: "Cuprum";
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.social-list{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.footer-bottom a{
+	font-family: "Cuprum";
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: none;
+	color: #ffd180;
+}
+
+.footer-bottom a:hover{
+	text-decoration: underline;
+}
+
+.footer-bottom a:active{
+	text-decoration: none;
+	color: #ee3643;
+}
+
+.copyright{
+	width: 230px;
+}
+
+.social-block{
+	margin-left: 160px;
+}
+
+.social{
+	display: block;
+	margin-right: 5px;
+	width: 40px;
+	height: 40px;
+	background-color: #212a3a;
+	border-radius: 50%;
+}
+
+.social:hover,
+.social:active{
+	background-color: #ee3643;
+}
+
+.social-vk{
+	background-image: url("../img/vk-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social-fb{
+	background-image: url("../img/fb-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social-ig{
+	background-image: url("../img/insta-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.feedback{
+	margin-right: 0;
+	margin-left: auto;
+	width: 140px;
+}
+
+.developer{
+	margin-right: 0;
+	margin-left: 20px;
+	padding-left: 30px;
+	width: 110px;
 }
