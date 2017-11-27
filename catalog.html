@@ -8,29 +8,27 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <!-- Шапка страницы -->
-    <header>
+    <!-- Блок header -->
+    <header class="inner-header">
       <div class="header-top">
         <div class="container">
           <div class="header-top-block logo logo-header">
             <a href="#">Техномарт</a>
           </div>
           
-          <form class="form-search">
+          <form class="header-top-block form-search">
             <span class="icon-find"></span>
             <input type="text" name="search" placeholder="Поиск:">
           </form>
 
           <div class="header-top-block bookmarks">
             <a href="#">
-              <span class="icon-bookmarks">Q</span>
               Закладки: <span class="mookmarks-count">0</span>
             </a>
           </div>
 
           <div class="header-top-block basket">
             <a href="#">
-              <span class="icon-basket">Q</span>
               Корзина: <span class="basket-count">0</span>
             </a>
           </div>
@@ -41,29 +39,25 @@
         </div>
       </div>
 
-      <div class="header-middle">
-        <div class="header-middle-block">
+      <div class="header-middle container">
+        <div class="header-middle-block middle-content">
           Интернет-магазин строительных материалов и инструментов для ремонта
         </div>
 
         <div class="header-middle-block contact">
           <div class="header-phone">
-            <span class="icon-phone">Q</span>
-            <b>+7(812)555-05-55</b>
+            +7(812) 555-05-55
           </div>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
+          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
         </div>
 
         <div class="header-middle-block user-block">
-          <p><span class="icon-user"></span>Равшан Джамшутоиич<span class="icon-logout"></span></p>
-          <ul class="menu-user">
-            <li class="menu-user-item"><a href="#">Мои заказы</a></li>
-            <li class="menu-user-item"><a href="#">Личный кабинет</a></li>
-          </ul>
+          <a href="#" class="user-block-login">Войти</a>
+          <a href="#" class="user-block-registration">Регистрация</a>
         </div>
       </div>
 
-      <nav class="main-menu">
+      <nav class="main-menu container">
         <ul class="menu-list">
           <li class="menu-item"><a href="#">Главная</a></li>
           <li class="menu-item"><a href="#">Компания</a></li>
@@ -77,22 +71,27 @@
     </header>
 
     <!-- Основное содержание страницы -->
-    <main>
+    <main class="container">
       <div class="breadcrumbs-block">
         <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+          <li class="breadcrumbs-item breadcrumbs-main"><a href="#"><span class="visuallly-hidden">Главная</span></a></li>
           <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
           <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
           <li class="breadcrumbs-item breadcrumbs-current-">Перфораторы</li>
         </ul>
       </div>
 
-      <h1>Перфораторы</h1>
+      <div class="title-block-catalog">
+        <h1 class="title">Перфораторы</h1>
+      </div>      
 
-      <!-- Секция фильтрации товара -->
+
+      <div class="main-content">
+        <!-- Секция фильтрации товара -->
       <section class="filter">
         <h2 class="filter-title">Фильтр:</h2>
         <form class="form-filter">
+          
           <fieldset class="fieldset-price">
             <legend>Цена:</legend>
           </fieldset>
@@ -146,9 +145,10 @@
         </form>
       </section>
 
-      <!-- Секция сортировки товара -->
+      <div class="sorting-wrapper">
+        <!-- Секция сортировки товара -->
       <section class="sorting">
-        <h2 class="sorting-title">Сортировка:</h2>
+        <p class="sorting-title">Сортировка:</p>
 
         <ul class="type-sorting-list">
           <li class="type-sorting-item">
@@ -166,10 +166,10 @@
 
         <ul class="direction-sorting-list">
           <li class="direction-sorting-item">
-            <a href="#" class="sorting-up">По возрастанию</a>
+            <a href="" class="sorting-up active"><span class="visuallly-hidden">По возрастанию</span></a>
           </li>
           <li class="direction-sorting-item">
-            <a href="#" class="sorting-down">По убыванию</a>
+            <a href="#" class="sorting-down"><span class="visuallly-hidden">По убыванию</span></a>
           </li>
         </ul>
       </section>
@@ -268,6 +268,14 @@
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </section>
+      </div>
+      </div>
+
+      
+
+          
+
+      
 
       <!-- Пара слов про перфораторы -->
       <section class="about-goods">
@@ -284,7 +292,7 @@
 
     <!-- Подвал страницы -->
     <footer>
-      <div class="footer-top">
+      <div class="footer-top container">
         <div class="footer-top-block logo logo-footer">
           <a href="#">Техномарт</a>
         </div>
@@ -300,7 +308,7 @@
         </nav>
       </div>
 
-      <div class="footer-middle">
+      <div class="footer-middle container">
         <div class="footer-middle-block">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7(812)555-05-55
@@ -317,16 +325,17 @@
       </div>
 
       <div class="footer-bottom">
-        <div class="container">
+        <div class="footer-wrapper container">
           <div class="footer-bottom-block copyright">
-            
+            © 2010–2017 Компания «Техномарт»
+            Все права защищены
           </div>
 
           <div class="footer-bottom-block social-block">
             <ul class="social-list">
-              <li class="social-item"><a href="#" class="social social-vk">В контакте</a></li>
-              <li class="social-item"><a href="#" class="social social-fb">Facebook</a></li>
-              <li class="social-item"><a href="#" class="social social-ig">Instagram</a></li>
+              <li class="social-item"><a href="#" class="social social-vk"><span class="visuallly-hidden">В контакте</span></a></li>
+              <li class="social-item"><a href="#" class="social social-fb"><span class="visuallly-hidden">Facebook</span></a></li>
+              <li class="social-item"><a href="#" class="social social-ig"><span class="visuallly-hidden">Instagram</span></a></li>
             </ul>
           </div>
 
@@ -339,6 +348,7 @@
             Разработано - 
             <a href="https://htmlacademy.ru">htmlacademy.ru</a>
           </div>
+        </div>
       </div>
     </footer>
 

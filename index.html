@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- Блок header -->
-    <header>
+    <header class="main-header">
       <div class="header-top">
         <div class="container">
           <div class="header-top-block logo logo-header">
@@ -351,11 +351,11 @@
 
     <!-- Формы popup -->
 
-    <div class="popup-map">
-      <div class="popup-map-container">
+    <div class="popup-map container">
+      <!--<div class="popup-map-container">-->
         <img src="img/map-popup.jpg" width="940" height="446" alt="Адрес офиса: Большая Конюшенная ул., 19">
-      </div>
-      <button type="button">Закрыть</button>
+      <!--</div>-->
+      <button type="button" class="btn-close"><span class="visuallly-hidden">Закрыть</span></button>
     </div>
 
     <div class="popup-write-us">
@@ -369,7 +369,9 @@
         <label for="text-for-us">Текст письма:</label>
         <textarea name="text-for-us" id="text-for-us"></textarea>
 
-        <button type="submit">Отправить</button>
+        <div class="btn-wrapper">
+          <button type="submit">Отправить</button>
+        </div>
       </form>
       <button type="button">Закрыть</button>
     </div>
