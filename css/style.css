@@ -494,6 +494,7 @@ header{
 }
 
 .features-block{
+	position: relative;
 	width: 300px;
 	min-height: 123px;
 }
@@ -576,20 +577,50 @@ header{
 	margin: 0;
 }
 
-.slider{
+.slider-container{
 	position: relative;
+	direction: block;
+	width: 620px;
+	min-height: 246px;
+	/*padding-left: 24px;
+	padding-top: 20px;*/
+	/*background-image: url("../img/slider-puncher.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 0 0;*/
+	color: #ffffff;
+	overflow: hidden;
+}
+
+.slider{
+	width: 1240px;
+	/*transform: translateX(-620px);*/
+}
+
+.slider-item{
+	float: left;
+	display: block;
 	width: 596px;
 	min-height: 246px;
 	padding-left: 24px;
 	padding-top: 20px;
+}
+
+.slider-puncher{
 	background-image: url("../img/slider-puncher.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	color: #ffffff;
 }
 
-.slider h3{
+.slider-drill{
+	background-image: url("../img/slider-drill.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.slider-container h3{
 	padding: 0;
 	margin: 0;
 	font-family: "Cuprum";
@@ -599,13 +630,13 @@ header{
 	margin-bottom: 
 }
 
-.slider span{
+.slider-container span{
 	font-family: "PT Sans";
 	font-size: 18px;
 	line-height: 24px;
 }
 
-.slider a{
+.slider-container a{
 	position: absolute;
 	left: 25px;
 	bottom: 22px;
@@ -617,15 +648,15 @@ header{
 	width: 195px;
 }
 
-.slider:before,
-.slider:after{
+.slider-container:before,
+.slider-container:after{
 	content: "";
 	width: 25px;
 	height: 25px;
 	position: absolute;
 }
 
-.slider:before{
+.slider-container:before{
 	left: 25px;
 	/*top: 50%;*/
 	top: 120px;
@@ -634,7 +665,7 @@ header{
 	transform: rotate(-45deg);
 }
 
-.slider:after{
+.slider-container:after{
 	right: 25px;
 	/*top: 50%;*/
 	top: 120px;
@@ -708,6 +739,7 @@ header{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 	padding: 0;
 	width: 216px;
 	min-height: 318px;
@@ -1482,6 +1514,129 @@ fieldset{
 	width: 700px;
 }
 
+.sorting{
+	display: flex;
+	align-items: center;
+	padding-left: 19px;
+	padding-right: 17px;
+	margin-bottom: 20px;
+	min-height: 38px;
+	background-color: #f7f3ec;
+	font-family: "PT Sans";
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.type-sorting-list{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+
+	list-style: none;
+}
+
+.type-sorting-list a{
+	/*display: block;*/
+	margin-left: 66px;
+	text-decoration: none;
+	border-bottom: 1px dotted #ee3643;
+	opacity: 0.3;
+}
+
+.type-sorting-list .active{
+	color: #ee3643;
+	opacity: 1;
+	border: none;
+}
+
+.type-sorting-list a:hover{
+	color: #000000;
+	opacity: 1;
+	border-bottom: 1px solid #ee3643;
+}
+
+.direction-sorting-list{
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	margin-right: 0;
+	margin-left: 46px;
+
+	list-style: none;
+}
+
+.direction-sorting-list a{
+	display: block;
+	position: relative;
+	width: 11px;
+	height: 10px;
+	margin-left: 21px;
+	background-color: #c5c5c5;
+}
+
+.direction-sorting-list .active{
+	background-color: #ee3643;
+}
+
+.direction-sorting-list a:hover{
+	background-color: #000000;
+}
+
+.sorting-up:before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: -6px;
+	width: 6px;
+	height: 13px;
+	background-color: #f7f3ec;
+	/*border: 1px solid red;*/
+	transform: rotate(30deg);
+	transform-origin: 6px 13px;
+}
+
+.sorting-up:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 11px;
+	width: 6px;
+	height: 13px;
+	background-color: #f7f3ec;
+	/*border: 1px solid red;*/
+	transform: rotate(-30deg);
+	transform-origin: 0px 13px;
+}
+
+.sorting-down:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -6px;
+	width: 6px;
+	height: 13px;
+	background-color: #f7f3ec;
+	/*border: 1px solid red;*/
+	transform: rotate(-30deg);
+	transform-origin: 6px 0px;
+}
+
+.sorting-down:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 11px;
+	width: 6px;
+	height: 13px;
+	background-color: #f7f3ec;
+	/*border: 1px solid red;*/
+	transform: rotate(30deg);
+	transform-origin: 0px 0px;
+}
 
 
 
@@ -1576,4 +1731,18 @@ fieldset{
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
+}
+
+.new:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 59px;
+	/*color: #ffffff;
+	background-color: #ee3643;*/
+	background-image: url("../img/new.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
