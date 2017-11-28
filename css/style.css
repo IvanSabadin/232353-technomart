@@ -644,6 +644,44 @@ header{
 	text-decoration: none;
 }
 
+.slider-control label{
+	position: absolute;
+	bottom: 36px;
+	/*left: 50%;	*/
+	width: 6px;
+	height: 6px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+}
+
+.slider-control .label-puncher{
+	left: 295px;
+	/*background-color: #ee3643;*/
+}
+
+.slider-control .label-drill{
+	right: 295px;
+}
+
+.radio-puncher:checked ~ .slider-control .label-puncher{
+	background-color: #ee3643;
+}
+
+.radio-drill:checked ~ .slider-control .label-drill{
+	background-color: #ee3643;
+}
+
+/*
+.radio-puncher:checked ~ .slider-container .slider{
+	transform: translateX(0);
+}
+
+.radio-drill:checked ~ .slider-container .slider{
+	transform: translateX(-620px);
+}
+*/
+
 .slider-btn{
 	width: 195px;
 }
