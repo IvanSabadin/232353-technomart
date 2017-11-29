@@ -427,29 +427,42 @@
 
     <!-- Формы popup -->
 
-    <div class="popup-map container">
+    <div class="popup-map">
       <!--<div class="popup-map-container">-->
         <img src="img/map-popup.jpg" width="940" height="446" alt="Адрес офиса: Большая Конюшенная ул., 19">
       <!--</div>-->
       <button type="button" class="btn-close"><span class="visuallly-hidden">Закрыть</span></button>
     </div>
 
-    <div class="popup-write-us">
-      <form class="form-write-us">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+    
 
-        <label for="email">Ваш a-mail:</label>
-        <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+    <div class="modal-writeus visuallly-hidden">      
+      <button type="button" class="modal-close">Закрыть</button>
 
-        <label for="text-for-us">Текст письма:</label>
-        <textarea name="text-for-us" id="text-for-us"></textarea>
+      <form class="writeus-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-contact">
+          <p>
+            <label for="user-name">Ваше имя:</label><br>
+            <input type="text" name="name" id="user-name" class="user-icon-name" placeholder="Представьтесь, пожалуйста" autofocus="">
+          </p>
 
-        <div class="btn-wrapper">
-          <button type="submit">Отправить</button>
+          <p>
+            <label for="user-email">Ваш e-mail:</label><br>
+            <input type="email" name="email" id="user-email" class="user-icon-name" placeholder="Для отправки ответа">
+          </p>
+        </div>
+
+        <div class="modal-text">
+          <p>
+            <label for="">Текст письма:</label><br>
+            <textarea name="letter" id="user-text">В свободной форме</textarea>
+          </p>
+        </div>        
+
+        <div class="modal-btn-block">
+          <input type="submit" name="" class="btn btn-writeus-submit" value="Отправить">
         </div>
       </form>
-      <button type="button">Закрыть</button>
     </div>
   </body>
 </html>
