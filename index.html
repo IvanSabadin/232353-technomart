@@ -133,7 +133,7 @@
 
             <!--<h3>Перфораторы</h3>
             <span>Настоящие мужские игрушки</span>-->
-            <a href="#" class="btn slider-btn">Открыть каталог</a>
+            <a href="catalog.html" class="btn slider-btn">Открыть каталог</a>
           </div>
           
           <div class="features-services">
@@ -282,40 +282,50 @@
 
 
       <!-- Секция сервисов -->
-      <section class="services ">
-        <div class="container">
-        <h2 class="title title-services">Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        
-        <div class="services-name">
-          <ul class="services-name-list">
-            <li class="services-name-item">Доставка</li>
-            <li class="services-name-item">Гарантия</li>
-            <li class="services-name-item">Кредит</li>
-          </ul>
-        </div>        
+      <section class="services-section">
+        <div class="services container">
+          <h2 class="title title-services">Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+          <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
-        <div class="services-description">
-          <div class="services-description-item service-delivery">
-            <h3 class="title-service-description">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</p>
-          </div>
+          <div class="slider-services-wrapper">
+            <input type="radio" id="radio-delivery" name="radio-services" class="visuallly-hidden radio-delivery" checked>
+            <input type="radio" id="radio-guarantee" name="radio-services" class="visuallly-hidden radio-guarantee">
+            <input type="radio" id="radio-credit" name="radio-services" class="visuallly-hidden radio-credit">
 
-          <div class="services-description-item service-guarantee">
-            <h3 class="title-service-description">Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, 
-              спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. 
-              Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-          </div>
+            <div class="slider-services-control">              
+              <label for="radio-delivery" class="label-delivery">Доставка</label>
+              <label for="radio-guarantee" class="label-guarantee">Гарантия</label>
+              <label for="radio-credit" class="label-credit">Кредит</label>
 
-          <div class="services-description-item service-credit">
-            <h3 class="title-service-description">Кредит</h3>
-            <p>Залезть в долговцю яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a href="#">Отправить заявку</a>
+            </div>
+
+            <div class="slider-services-container">
+              <div class="slider-services">
+                <div class="slider-services-item slider-delivey">
+                  <h3>Доставка</h3>
+                  <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!</p>  
+                  <p>Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                </div>
+
+                <div class="slider-services-item slider-guarantee">
+                  <h3>Гарантия</h3>
+                  <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, 
+                    спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. 
+                    Мы обменяем сгоревший товар на новый.</p>
+                  <p>Дом уж восстановите как-нибудь сами.</p>
+                </div>
+
+                <div class="slider-services-item slider-credit">
+                  <h3>Кредит</h3>
+                  <p>Залезть в долговую яму стало проще!<br> 
+                    Кредитные консультанты придут вам на помощь.</p>
+
+                  <a href="#" class="btn">Отправить заявку</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -408,7 +418,7 @@
 
           <div class="footer-bottom-block developer">
             Разработано - 
-            <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
         </div>
       </div>

@@ -947,20 +947,163 @@ header{
 	margin: auto;
 }
 
-.services{
+.services-section{
 	padding-top: 63px;
+	padding-bottom: 54px;
 	margin-bottom: 77px;
 	background-color: #f4f8f9;
 }
 
 .services h2{
+	margin-bottom: 30px;
+	font-family: "Cuprum";
+	font-size: 30px;
+	text-transform: uppercase;
 	color: #000000;
 }
 
 .services p{
+	margin-bottom: 10px;
 	font-family: "PT Sans";
 	font-size: 13px;
 	line-height: 24px;
+	color: #000000;
+}
+
+.slider-services-wrapper{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+	min-height: 272px;
+}
+
+.slider-services-control{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	position: relative;
+	padding-top: 50px;
+	width: 240px;
+	min-height: 222px;
+	/*border: 1px solid red;*/
+}
+
+.slider-services-control:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 272px;
+	background-image: url("../img/bg-service-border.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+
+
+.slider-services-control label{
+	display: block;
+	height: 45px;
+	padding-top: 15px;
+	background-color: #32425c;
+	font-family: "Cuprum";
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #ffffff;
+	padding-left: 22px;
+}
+
+.slider-services-control label:hover{
+	background-color: #293449;
+}
+
+.radio-delivery:checked ~ .slider-services-control .label-delivery{
+	color: #32425c;
+	background-color: #ffffff;
+}
+
+.radio-guarantee:checked ~ .slider-services-control .label-guarantee{
+	color: #32425c;
+	background-color: #ffffff;
+}
+
+.radio-credit:checked ~ .slider-services-control .label-credit{
+	color: #32425c;
+	background-color: #ffffff;
+}
+
+.slider-services-container{
+	padding-top: 40px;
+	width: 620px;
+	height: 235px;
+	overflow: hidden;
+	/*border: 1px solid red;*/
+}
+
+.slider-services{
+	top: 0;
+	left: 0;
+	width: 1860px;
+	min-height: 235px;
+	transform: translateX(0);
+}
+
+.slider-services-item{
+	float: left;
+}
+
+.slider-services-item h3{
+	margin-bottom: 29px;
+	font-family: "Cuprum";
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.slider-services-item p{
+	width: 380px;
+	font-family: "PT Sans";
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.slider-delivey{
+	width: 620px;
+	height: 285px;
+	background-image: url("../img/bg-service-delivery.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+
+.slider-guarantee{
+	width: 620px;
+	height: 285px;
+	background-image: url("../img/bg-service-guarantee.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+
+.slider-credit{
+	position: relative;
+	width: 620px;
+	height: 285px;
+	background-image: url("../img/bg-service-credit.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+
+.slider-credit a{
+	position: absolute;
+	bottom: 98px;
+	left: 0;*
+	display: block;
+	width: 195px;
+	text-decoration: none;
+	color: #ffffff;
 }
 
 .information{
