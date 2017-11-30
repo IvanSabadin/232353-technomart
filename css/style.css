@@ -1914,6 +1914,7 @@ fieldset{
 
 	/*border: 1px solid red;*/
 	border-top: 7px solid #ff5257;
+	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .modal-close{
@@ -2017,4 +2018,84 @@ fieldset{
 .btn-writeus-submit{
 	width: 100%;
 	border: 0;
+}
+
+.modal-map{
+	position: fixed;
+	/*top: 450px;*/
+	top: 50%;
+	left: 50%;
+	width: 940px
+	height: 446px;
+	margin-left: -470px;
+	margin-top: -223px;
+
+	box-shadow: 0 0 26px 4px rgba(47, 42, 43, 0.5);
+
+}
+
+.modal-add{
+	position: fixed;
+
+	top: 200px;
+	left: 50%;
+	margin-left: -310px;	
+	/*width: 460px;*/
+	width: 620px;
+	min-height: 200px;
+	padding-top: 63px;
+	background-color: #ffffff;
+
+	/*border: 1px solid red;*/
+	border-top: 7px solid #ff5257;
+
+	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-add p{
+	position: relative;
+	font-family: "Cuprum";
+	font-size: 30px;
+	color: #000000;
+	margin-left: 180px;
+	margin-bottom: 68px;
+}
+
+.modal-add p:before{
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: -98px;
+	width: 66px;
+	height: 66px;
+	background-image: url("../img/icon-add-to-basket.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.modal-btn-block{
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-to-order{
+	display: block;
+	width: 220px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.btn-add-close{
+	display: block;
+	width: 220px;
+	height: 38px;
+	font-family: "Cuprum";
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000000;
+	text-align: center;
+	background-color: #ffffff;
+	border-style: none;
+	border-radius: 3px;
 }
