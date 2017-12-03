@@ -30,6 +30,10 @@ header{
 	display: none;
 }
 
+.modal-show{
+	display: block;
+}
+
 .container{
 	width: 940px;
 	margin: 0 auto;
@@ -39,7 +43,8 @@ header{
 .header-top{
 	padding: 0;
 	margin-bottom: 46px;
-	min-height: 42px;
+	/*min-height: 42px;*/
+	height: 42px;
 	background-color: #293449;
 	line-height: 42px;
 }
@@ -245,7 +250,7 @@ header{
 .header-middle{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 43px;
+	margin-bottom: 34px;
 }
 
 .header-middle-block{
@@ -257,7 +262,7 @@ header{
 
 .middle-content{
 	width: 196px;
-	padding-top: 6px;
+	padding-top: 3px;
 	padding-left: 53px;
 	padding-right: 51px;
 	font-family: "Cuprum";
@@ -443,9 +448,11 @@ header{
 }
 
 .main-menu{
-	padding: 0;
-	min-height: 55px;
+	padding: 0 20px 0 20px;
+	box-sizing: border-box;
+	/*min-height: 55px;*/
 	background-color: #32425c;
+	border-bottom: 5px solid #293449;
 }
 
 .menu-list{
@@ -463,13 +470,15 @@ header{
 
 .main-menu a{
 	display: block;
+	padding-top: 20px;
+	height: 100%;
 	font-family: "Cuprum";
 	font-size: 17px;
-	line-height: 55px;
+	/*line-height: 55px;*/
 	color: #ffffff;
 	text-decoration: none;
 	text-align: center;
-	border-bottom: 5px solid #293449;
+	/*border-bottom: 5px solid #293449;*/
 }
 
 .main-menu a:hover{
@@ -500,9 +509,9 @@ header{
 }
 
 .features-block h3{
-	margin-top: 23px;
+	margin-top: 21px;
 	margin-left: 23px;
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 	font-family: "Cuprum";
 	font-size: 24px;
 	line-height: 30px;
@@ -539,35 +548,35 @@ header{
 	background-color: #ffbf47;
 	background-image: url("../img/icon-materials.svg");
 	background-repeat: no-repeat;
-	background-position: 85% 50%;
+	background-position: 213px 31px;
 }
 
 .instruments{
 	background-color: #3bbce3;
 	background-image: url("../img/icon-instruments.svg");
 	background-repeat: no-repeat;
-	background-position: 85% 50%;
+	background-position: 197px 33px;
 }
 
 .equipment{
 	background-color: #dc91d9;
 	background-image: url("../img/icon-equipment.svg");
 	background-repeat: no-repeat;
-	background-position: 85% 50%;
+	background-position: 191px 31px;
 }
 
 .discount{
 	background-color: #8ed78f;
 	background-image: url("../img/icon-discount.svg");
 	background-repeat: no-repeat;
-	background-position: 85% 50%;
+	background-position: 196px 26px;
 }
 
 .delivery{
 	background-color: #ffc047;
 	background-image: url("../img/icon-delivery.svg");
 	background-repeat: no-repeat;
-	background-position: 85% 50%;
+	background-position: 191px 32px;
 }
 
 .wrapper{
@@ -816,7 +825,7 @@ header{
 .popular-goods-item h3{
 	padding: 0;
 	margin: 0;
-	margin-bottom: 11px;
+	/*margin-bottom: 11px;*/
 	text-align: center;
 }
 
@@ -1932,7 +1941,7 @@ fieldset{
 	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
-.modal-close{
+.modal-writeus-close{
 	position: absolute;
 	top: 9px;
 	right: 9px;
@@ -1944,8 +1953,8 @@ fieldset{
 	border: 0;
 }
 
-.modal-close:before,
-.modal-close:after{
+.modal-writeus-close:before,
+.modal-writeus-close:after{
 	position: absolute;
 	top: 10px;
 	left: 2px;
@@ -1957,11 +1966,11 @@ fieldset{
 	background-color: #ee3643;
 }
 
-.modal-close:before{
+.modal-writeus-close:before{
 	transform: rotate(45deg);
 }
 
-.modal-close:after{
+.modal-writeus-close:after{
 	transform: rotate(-45deg);
 }
 
