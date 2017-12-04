@@ -588,7 +588,7 @@ header{
 
 .slider-container{
 	position: relative;
-	direction: block;
+	display: block;
 	width: 620px;
 	min-height: 246px;
 	/*padding-left: 24px;
@@ -636,7 +636,7 @@ header{
 	font-weight: bold;
 	font-size: 36px;
 	text-transform: uppercase;
-	margin-bottom: 
+	/*margin-bottom: */
 }
 
 .slider-container span{
@@ -2049,7 +2049,7 @@ fieldset{
 	/*top: 450px;*/
 	top: 50%;
 	left: 50%;
-	width: 940px
+	width: 940px;
 	height: 446px;
 	margin-left: -470px;
 	margin-top: -223px;
