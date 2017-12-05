@@ -774,7 +774,7 @@ header{
 .popular-goods-list{
 	display: flex;
 	justify-content: space-between;	
-	margin-bottom: 32px;
+	/*margin-bottom: 32px;*/
 	flex-wrap: wrap;
 }
 
@@ -819,7 +819,8 @@ header{
 .popular-goods-img{
 	margin: 0;
 	min-height: 140px;
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
+	margin-bottom: 32px;
 }
 
 .popular-goods-item h3{
@@ -831,7 +832,8 @@ header{
 
 .popular-goods-item p{
 	margin: 0;
-	margin-bottom: 12px;
+	/*margin-bottom: 12px;*/
+	margin-top: 10px;
 	font-family: "PT Sans";
 	font-size: 17px;
 	font-weight: bold;
@@ -935,7 +937,7 @@ header{
 }
 
 .popular-brands{
-	margin-bottom: 85px;
+	margin-bottom: 63px;
 }
 
 .popular-brands-list{
@@ -947,9 +949,9 @@ header{
 .popular-brands-item a{
 	display: block;
 	margin-bottom: 20px;
-	width: 216px;
-	height: 141px;
-	border: 2px solid #ebebeb;
+	width: 218px;
+	height: 143px;
+	border: 1px solid #ebebeb;
 	/*text-align: center;*/
 }
 
@@ -979,7 +981,7 @@ header{
 }
 
 .services h2{
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 	font-family: "Cuprum";
 	font-size: 30px;
 	text-transform: uppercase;
@@ -987,7 +989,6 @@ header{
 }
 
 .services p{
-	margin-bottom: 10px;
 	font-family: "PT Sans";
 	font-size: 13px;
 	line-height: 24px;
@@ -997,7 +998,7 @@ header{
 .slider-services-wrapper{
 	display: flex;
 	justify-content: space-between;
-	margin-top: 25px;
+	margin-top: 18px;
 	min-height: 272px;
 }
 
@@ -1080,7 +1081,8 @@ header{
 }
 
 .slider-services-item h3{
-	margin-bottom: 29px;
+	margin-bottom: 23px;
+	margin-top: 6px;
 	font-family: "Cuprum";
 	font-size: 36px;
 	text-transform: uppercase;
@@ -1914,8 +1916,8 @@ fieldset{
 .new:after{
 	content: "";
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -1px;
+	right: -1px;
 	width: 60px;
 	height: 59px;
 	/*color: #ffffff;
