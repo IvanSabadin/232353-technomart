@@ -701,10 +701,11 @@ header{
 	width: 25px;
 	height: 25px;
 	position: absolute;
+	cursor: pointer;
 }
 
 .slider-container:before{
-	left: 25px;
+	left: 30px;
 	/*top: 50%;*/
 	top: 120px;
 	border-top: 3px solid #ffffff;
@@ -976,7 +977,7 @@ header{
 .services-section{
 	padding-top: 63px;
 	padding-bottom: 54px;
-	margin-bottom: 77px;
+	margin-bottom: 82px;
 	background-color: #f4f8f9;
 }
 
@@ -1102,7 +1103,7 @@ header{
 	height: 285px;
 	background-image: url("../img/bg-service-delivery.png");
 	background-repeat: no-repeat;
-	background-position: 100% 100%;
+	background-position: 100% 34px;
 }
 
 .slider-guarantee{
@@ -1110,7 +1111,7 @@ header{
 	height: 285px;
 	background-image: url("../img/bg-service-guarantee.png");
 	background-repeat: no-repeat;
-	background-position: 100% 100%;
+	background-position: 239px 12px;
 }
 
 .slider-credit{
@@ -1119,12 +1120,12 @@ header{
 	height: 285px;
 	background-image: url("../img/bg-service-credit.png");
 	background-repeat: no-repeat;
-	background-position: 100% 100%;
+	background-position: 165px 10px;
 }
 
 .slider-credit a{
 	position: absolute;
-	bottom: 98px;
+	bottom: 102px;
 	left: 0;*
 	display: block;
 	width: 195px;
@@ -1140,11 +1141,11 @@ header{
 
 .information h2{
 	color: #000000;
-	margin-bottom: 30px;
+	margin-bottom: 24px;
 }
 
 .information p{
-	margin-bottom: 34px;
+	margin-bottom: 24px;
 	font-family: "PT Sans";
 	font-size: 13px;
 	line-height: 24px;
@@ -1172,11 +1173,33 @@ header{
 .information-about ul{
 	padding: 0;
 	margin: 0;
+	margin-top: -3px;
+	margin-left: 36px;
 	list-style: none;
 }
 
+.information-about li{
+	position: relative;
+	margin-bottom: 20px;
+	font-family: "Cuprum";
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+}
+
+.information-about li:before{
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 2px;
+	top: 9px;
+    left: -36px;
+	background-color: #ee3643;
+}
+
 .information-map{
-	margin-bottom: 40px;
+	padding-top: 7px;
+    margin-bottom: 36px;
 }
 
 .btn-about{
@@ -1216,14 +1239,14 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	min-height: 63px;
-	margin-bottom: 35px;
+	margin-bottom: 32px;
 }
 
 .menu-footer-list{
 	display: flex;
 	padding: 0;
 	margin: 0;
-	margin-top: 40px;
+	margin-top: 38px;
 	list-style: none;
 }
 
@@ -1248,11 +1271,15 @@ footer{
 .footer-middle{
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 53px;
+	margin-bottom: 50px;
 	font-family: "Cuprum";
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
+}
+
+.footer-middle-block{
+	margin-left: 3px;
 }
 
 .menu-catalog-list{
@@ -1330,6 +1357,7 @@ footer{
 .social{
 	display: block;
 	margin-right: 5px;
+	margin-top: -2px;
 	width: 40px;
 	height: 40px;
 	background-color: #212a3a;
@@ -1458,7 +1486,7 @@ footer{
 .filter-title{
 	height: 38px;
 	padding-left: 18px;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 	font-family: "PT Sans";
 	font-size: 13px;
 	line-height: 38px;
@@ -1471,7 +1499,7 @@ fieldset{
 }
 
 .form-filter h3{
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 	font-family: "PT Sans";
 	font-size: 17px;
 	font-weight: bold;
@@ -1480,8 +1508,8 @@ fieldset{
 }
 
 .price-block{
-	margin-bottom: 25px;
-	padding-bottom: 25px;
+	margin-bottom: 18px;
+    padding-bottom: 25px;
 	border-bottom: 2px solid #e5e5e5;
 }
 
@@ -1556,7 +1584,7 @@ fieldset{
 	min-height: 38px;
 	width: 95px;
 	font-family: "PT Sans";
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 38px;
 	text-transform: uppercase;
 	color: #000000;
@@ -1566,8 +1594,8 @@ fieldset{
 }
 
 .brands-block{
-	padding-bottom: 20px;
-	margin-bottom: 25px;
+	padding-bottom: 2px;
+    margin-bottom: 19px;
 	border-bottom: 2px solid #e5e5e5;
 }
 
@@ -1584,7 +1612,7 @@ fieldset{
 }
 
 .brands-block li{
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 }
 
 .brands-block label{
@@ -1624,13 +1652,14 @@ fieldset{
 
 .powersupply-block{
 	/*border-bottom: 1px solid red;*/
-	margin-bottom: 55px;
+	margin-bottom: 79px;
 }
 
 .powersupply-block ul{
 	padding: 0;
 	padding-left: 35px;
 	margin: 0;
+	margin-top: -2px;
 	list-style: none;
 	font-family: "PT Sans";
 	font-size: 14px;
@@ -1640,7 +1669,7 @@ fieldset{
 }
 
 .powersupply-block li{
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 }
 
 .powersupply-block label{
@@ -1699,7 +1728,7 @@ fieldset{
 	align-items: center;
 	padding-left: 19px;
 	padding-right: 17px;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 	min-height: 38px;
 	background-color: #f7f3ec;
 	font-family: "PT Sans";
