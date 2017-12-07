@@ -313,12 +313,23 @@ header{
 
 .user-block{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 	height: 45px;
 }
 
+/*
+.user-block-wrapper{
+	display: flex;
+	flex-direction: column;
+	height: 45px;
+}
+*/
+
 .user-active-block{
-	margin-left: 10px;
+	display: flex;
+	justify-content: space-between;
+	/*margin-left: 10px;*/
 	height: 45px;
 	width: 300px;
 	background-color: #ffffff;
@@ -404,6 +415,21 @@ header{
 	color: #ee3643;
 }*/
 
+.user-active{
+	width: 193px;
+	/*border: 1px solid red;*/
+}
+
+.user-exit{
+	position: relative;
+	width: 60px;
+	/*border: 1px solid red;*/
+}
+
+.user-exit span{
+	font-size: 0;
+}
+
 .user-active:active{
 	color: #000000;
 	opacity: 0.3;
@@ -421,23 +447,27 @@ header{
 	background-position: 0 0;
 }
 
-.user-active:after{
+/*.user-active:after{*/
+.user-exit:after{
 	position: absolute;
 	content: "";
 	width: 20px;
 	height: 18px;
-	top: 13px;
-	right: 10px;
+	top: 50%;
+	margin-top: -9px;
+	left: 50%;
+	margin-left: -10px;
 	background-image: url("../img/icon-logout.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	/*border: 1px solid red;*/
 }
 
 .user-active:hover:before{
 	background-image: url("../img/icon-user-act.svg");
 }
 
-.user-active:hover:after{
+.user-exit:hover:after{
 	background-image: url("../img/icon-logout-act.svg");
 }
 
@@ -445,6 +475,17 @@ header{
 .user-active:active:before,
 .user-active:active:after{
 	opacity: 0.3;
+}
+
+.user-menu{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: "Cuprum";
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
 }
 
 .main-menu{
