@@ -1,13 +1,13 @@
 var link = document.querySelector(".btn-follow-mail");
 var popup = document.querySelector(".modal-writeus");
 var close = document.querySelector(".modal-writeus-close");
-var user = popup.querySelector(".user-name-field");
+var user = document.querySelector(".user-name-field");
 
 
 var topopupbookmarks = document.querySelectorAll(".goods-hidden-basket");
 var popupbookmark = document.querySelector(".modal-add");
-var btnclose = popupbookmark.querySelector(".btn-add-close");
-var modalclose = popupbookmark.querySelector(".modal-add-close");
+var btnclose = document.querySelector(".btn-add-close");
+var modalclose = document.querySelector(".modal-add-close");
 
 
 link.addEventListener("click", function (evt) {
