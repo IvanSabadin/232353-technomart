@@ -95,6 +95,7 @@ header{
 .logo-header a{
 	display: block;
 	/*padding-left: 55px;*/
+	padding-top: 13px;
 	font-family: "Cuprum";
 	font-size: 24px;
 	text-transform: uppercase;
@@ -270,6 +271,7 @@ header{
 .order{
 	display: inline-block;
 	width: 150px;
+	height: 42px;
 	background-color: #63a63e;
 }
 
@@ -372,6 +374,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	/*margin-left: 10px;*/
+	/*margin-bottom: 10px;*/
 	height: 45px;
 	width: 300px;
 	background-color: #ffffff;
@@ -462,13 +465,14 @@ header{
 }*/
 
 .user-active{
-	width: 193px;
+	width: 209px;
 	/*border: 1px solid red;*/
 }
 
 .user-exit{
 	position: relative;
-	width: 60px;
+	/*width: 60px;*/
+	width: 44px;
 	/*border: 1px solid red;*/
 }
 
@@ -526,7 +530,7 @@ header{
 .user-active-menu{
 	display: flex;
 	justify-content: flex-start;
-	padding-left: 20px;
+	/*padding-left: 20px;*/
 }
 
 .user-menu{
@@ -546,6 +550,7 @@ header{
 	line-height: 18px;
 	text-decoration: underline;
 	color: #32425c;
+	padding-top: 8px;
 }
 
 .user-menu a:hover{
@@ -880,8 +885,8 @@ header{
 .title-block{
 	display: flex;
 	justify-content: space-between;
-	padding: 25px;
-	padding-left: 30px;
+	/*padding: 25px;*/
+	/*padding-left: 30px;*/
 	margin-bottom: 20px;
 	background-color: #f9f5f0;
 }
@@ -891,11 +896,23 @@ header{
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #32425c;
+	margin-top: 27px;
+	margin-bottom: 26px;
+}
+
+.title-popular-goods{
+	margin-left: 28px;
+}
+
+.title-popular-brands{
+	margin-left: 24px;
 }
 
 .title-block a{
 	color: #ffffff;
-	text-decoration: none;	
+	text-decoration: none;
+	margin-top: 25px;
+	margin-right: 24px;
 }
 
 .title-block-btn{
@@ -920,7 +937,7 @@ header{
 	position: relative;
 	padding: 0;
 	width: 216px;
-	min-height: 318px;
+	height: 315px;
 	border: 2px solid #eaeaea;
 	/*margin-bottom: 20px;*/
 	margin-bottom: 18px;
@@ -950,9 +967,30 @@ header{
 
 .popular-goods-img{
 	margin: 0;
-	min-height: 140px;
+	/*min-height: 140px;*/
+	height: 145px;
 	/*margin-bottom: 40px;*/
 	margin-bottom: 32px;
+}
+
+.bfg-9000{
+	margin-top: 47px;
+	margin-right: 1px;
+}
+
+.bfg-3000{
+	margin-top: 39px;
+	margin-right: 12px;
+}
+
+.bfg-6000{
+	margin-top: 43px;
+	margin-right: 22px;
+}
+
+.bfg-2000{
+	margin-top: 39px;
+	margin-right: 29px;
 }
 
 .popular-goods-item h3{
@@ -979,6 +1017,7 @@ header{
 	display: block;
 	margin: auto;
 	margin-bottom: 20px;
+	margin-left: 41px;
 	/*height: 38px;*/
 	width: 141px;
 	font-family: "PT Sans";
@@ -1005,17 +1044,20 @@ header{
 	/*background-color: #ffffff;*/
 }
 
+
 .goods-hidden-buy{
 	display:  block;
 	position: relative;
 	width: 135px;
+	height: 25px;
 	margin-bottom: 7px;
+	padding-top: 10px;
 	font-family: "Cuprum";
 	font-size: 14px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
-	line-height: 35px;
+	line-height: 18px;
 	color: #ffffff;
 	background-color: #63a63e;
 	border-radius: 5px;
@@ -1024,8 +1066,8 @@ header{
 
 .goods-hidden-buy:before{
 	position: absolute;
-	top: 13px;
-	left: 18px;
+	top: 10px;
+	left: 15px;
 	content: "";
 	width: 15px;
 	height: 15px;
@@ -1049,12 +1091,14 @@ header{
 .goods-hidden-basket{
 	display: block;
 	width: 129px;
+	height: 24px;
+	padding-top: 8px;
 	font-family: "Cuprum";
 	font-size: 14px;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
-	line-height: 35px;
+	line-height: 18px;
 	color: #32425c;
 	border: 3px solid #63a63e;
 	border-radius: 5px;
@@ -1069,7 +1113,7 @@ header{
 }
 
 .popular-brands{
-	margin-bottom: 63px;
+	margin-bottom: 38px;
 }
 
 .popular-brands-list{
@@ -1095,11 +1139,13 @@ header{
 	box-shadow: 0 2px 10px 0px #293449;
 }
 
+/*
 .brand-wrapper{
 	display: flex;
 	width: 100%;
 	height: 100%;
 }
+*/
 
 .brand-wrapper img{
 	margin: auto;
@@ -1108,7 +1154,7 @@ header{
 .services-section{
 	padding-top: 63px;
 	padding-bottom: 54px;
-	margin-bottom: 82px;
+	margin-bottom: 55px;
 	background-color: #f4f8f9;
 }
 
@@ -1593,15 +1639,17 @@ footer{
 
 .title-block-catalog{
 	min-height: 89px;
-	padding-left: 30px;
-	margin-bottom: 20px;
+	padding-left: 28px;
+	padding-top: 1px;
+	margin-bottom: 18px;
 	background-color: #f2f6f8;
 }
 
 .title-block-catalog h1{
 	font-family: "Cuprum"
 	font-size: 30px;
-	line-height: 89px;	
+	line-height: 30px;
+	margin-bottom: 10px;	
 }
 
 .main-content{
@@ -1680,6 +1728,24 @@ fieldset{
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }*/
+
+.slider-price-strip{
+	position: absolute;
+	top: 38px;
+	left: 20px;
+	width: 180px;
+	height: 2px;
+	background-color: #d7dcde;
+}
+
+.slider-price-activestrip{
+	position: absolute;
+	top: 38px;
+	left: 20px;
+	width: 152px;
+	height: 2px;
+	background-color: #00ca74;
+}
 
 .slider-price-min{
 	position: absolute;
@@ -1859,7 +1925,7 @@ fieldset{
 	align-items: center;
 	padding-left: 19px;
 	padding-right: 17px;
-	margin-bottom: 18px;
+	margin-bottom: 19px;
 	min-height: 38px;
 	background-color: #f7f3ec;
 	font-family: "PT Sans";
@@ -1876,6 +1942,8 @@ fieldset{
 	margin-left: auto;
 
 	list-style: none;
+
+	/*border: 1px solid red;*/
 }
 
 .type-sorting-list a{
@@ -1904,7 +1972,7 @@ fieldset{
 	padding: 0;
 	margin: 0;
 	margin-right: 0;
-	margin-left: 46px;
+	margin-left: 24px;
 
 	list-style: none;
 }
@@ -2015,13 +2083,14 @@ fieldset{
 	justify-content: flex-start;
 	padding: 0;
 	margin: 0;
+	margin-top: 35px;
 	list-style: none;
 }
 
 .pagination-list a{
 	display: block;
-	height: 36px;
-	width: 36px;
+	height: 34px;
+	width: 34px;
 	margin-right: 10px;
 	border: 2px solid #e5e5e5;
 	border-radius: 3px;
@@ -2055,7 +2124,7 @@ fieldset{
 .about-goods{
 	background-color: #f2f6f8;
 	padding-top: 63px;
-	padding-bottom: 73px;
+	padding-bottom: 68px;
 }
 
 .about-goods h2{
@@ -2063,7 +2132,7 @@ fieldset{
 	font-size: 30px;
 	color: #000000;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	margin-bottom: 23px;
 }
 
 .about-goods p{
@@ -2257,6 +2326,39 @@ fieldset{
 	background-image: url("../img/icon-add-to-basket.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.modal-add-close{
+	position: absolute;
+	top: 9px;
+	right: 9px;
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+}
+
+.modal-add-close:before,
+.modal-add-close:after{
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	content: "";
+
+	width: 19px;
+	height: 3px;
+
+	background-color: #ee3643;
+}
+
+.modal-add-close:before{
+	transform: rotate(45deg);
+}
+
+.modal-add-close:after{
+	transform: rotate(-45deg);
 }
 
 .modal-btn-block{
